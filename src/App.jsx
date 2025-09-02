@@ -24,9 +24,9 @@ function App() {
               <p className="text-7xl leading-[90px] sm:text-8xl text-[#6d0605] font-bold font-anton sm:leading-[115px]">
                 <span>Jully Fest</span>
                 <span className=""> 2025</span>
-                <p className="inline  ml-[15px] -mt-[1px] lg:m-0 lg:block text-4xl text-[#6d0605] font-poppins font-light">15 ANOS</p>
+                <p className="inline  ml-[15px] -mt-[1px] lg:m-0 lg:block text-2xl sm:text-4xl text-[#6d0605] font-poppins font-light">15 ANOS</p>
               </p>
-         
+
             </div>
           </div>
 
@@ -66,12 +66,12 @@ function App() {
               <p className='font-bebas text-4xl sm:text-5xl'>19:00 - <br />CREPÚSCULO</p>
             </div>
 
-            <div className='text-white'>
+            <div className='text-white '>
               <a href='https://forms.gle/B6jAaGv1zE1iYAuY6' target='_blank' className='font-alice text-3xl'>
-                Clique para realizar a<br />
+                Clique para<br/>
               </a>
               <a href='https://forms.gle/B6jAaGv1zE1iYAuY6' target='_blank' className='font-bebas text-4xl sm:text-5xl'>
-                CONFIRMAÇÃO
+                CONFIRMAR
               </a>
             </div>
           </div>
