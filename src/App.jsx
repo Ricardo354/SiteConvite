@@ -38,7 +38,7 @@ function App() {
             <div className='flex flex-col mt-[8%] lg:w-[45%] lg:mt-0 ml-[2%] gap-[30px]'>
               <p className='leading-[55px] text-5xl font-bebas text-[#3d0707]'>Separe seu melhor papel cinematográfico e venha participar da maior premiação da América:</p>
               <p className='text-4xl font-alice  text-[#3d0707]'>A edição 2025 da festa mais aguardada do ano traz em seu menu a presença das maiores figuras do cinema!
-                VAI ENCARAR? Nesta página, os ilustres convidados deverão inserir os registros digitais da festa para melhor funcionamento da divulgação. </p>
+                VAI ENCARAR? Nesta página, os ilustres convidados deverão inserir os registros digitais da festa.</p>
               <p className='font-bebas text-[#3d0707] font-light text-4xl'>fonte: oliveira, c.b.</p>
             </div>
           </div>
