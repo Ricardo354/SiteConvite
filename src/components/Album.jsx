@@ -22,7 +22,7 @@ function Album() {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const res = await fetch(`${process.env.VITE_API_URL}/api/list-images`);
+        const res = await fetch(`https://convite-juliana.vercel.app/api/list-images`);
         const data = await res.json();
         if (data.images) setImages(data.images);
       } catch (err) {
@@ -60,7 +60,7 @@ function Album() {
       files.forEach((file, index) => {
         formData.append(`image-${index}`, file, file.name);
       });
-      await fetch(`${process.env.VITE_API_URL}/api/upload`, { method: "POST", body: formData });
+      await fetch(`https://convite-juliana.vercel.app/api/upload`, { method: "POST", body: formData });
     } catch (err) {
       console.error("Erro no upload:", err);
     } finally {
