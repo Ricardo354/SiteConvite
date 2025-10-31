@@ -1,11 +1,9 @@
-
 function App() {
 
   return (
     <>
       <title>Jully Fest 2025</title>
       <div className="flex justify-between">
-
 
 
         <div className="flex flex-col justify-around  w-[6%] bg-black">
@@ -21,7 +19,7 @@ function App() {
         <div className="flex flex-col flex-1 bg-white border-20 border-[#3d0707] ">
           <div className="p-[2%]">
             <div className="gap-2">
-              <p className="text-7xl leading-[90px] sm:text-8xl text-[#6d0605] font-bold font-anton sm:leading-[115px]">
+              <p className="text-7xl  leading-[90px] sm:text-8xl text-[#6d0605] font-bold font-anton sm:leading-[115px]">
                 <span>Jully Fest</span>
                 <span className=""> 2025</span>
                 <p className="inline  ml-[15px] -mt-[1px] lg:m-0 lg:block text-2xl sm:text-4xl text-[#6d0605] font-poppins font-light">15 ANOS</p>
