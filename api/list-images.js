@@ -14,12 +14,15 @@ export default async function handler(req, res) {
   }
 
   try {
+    console.log("ENV REGION:", process.env.AWS_REGION);
+    console.log("ENV BUCKET:", process.env.BUCKET_NAME);
     const command = new ListObjectsV2Command({
       Bucket: process.env.BUCKET_NAME,
     });
 
     const data = await s3.send(command);
 
+    console.log("S3 Contents:", data.Contents);
     const images =
       data.Contents?.map((item) => {
         const fileName = item.Key; // the S3 file key
