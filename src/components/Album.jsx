@@ -5,11 +5,9 @@ function Album() {
   const [images, setImages] = useState([]);
   const [uploading, setUploading] = useState(false);
 
-  // pagination
   const [currentPage, setCurrentPage] = useState(1);
   const IMAGES_PER_PAGE = 15;
 
-  // 🔥 NEW STATES
   const [showModal, setShowModal] = useState(false);
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [instagramUser, setInstagramUser] = useState("");
@@ -24,7 +22,7 @@ function Album() {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const res = await fetch("/api/list-images");
+        const res = await fetch(`${process.env.VITE_API_URL}/api/list-images`);
         const data = await res.json();
         if (data.images) setImages(data.images);
       } catch (err) {
@@ -34,7 +32,6 @@ function Album() {
     fetchImages();
   }, []);
 
-  // ✅ intercept file select to ask IG @
   const handleFileSelect = (e) => {
     const files = Array.from(e.target.files);
     if (!files.length) return;
@@ -42,7 +39,6 @@ function Album() {
     setShowModal(true);
   };
 
-  // ✅ Confirm & upload
   const confirmUpload = async () => {
     if (!instagramUser.trim()) return alert("Digite seu @ do Instagram!");
 
@@ -64,7 +60,7 @@ function Album() {
       files.forEach((file, index) => {
         formData.append(`image-${index}`, file, file.name);
       });
-      await fetch("/api/upload", { method: "POST", body: formData });
+      await fetch(`${process.env.VITE_API_URL}/api/upload`, { method: "POST", body: formData });
     } catch (err) {
       console.error("Erro no upload:", err);
     } finally {
