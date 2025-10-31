@@ -184,7 +184,7 @@ function Album() {
                 disabled={currentPage === 1}
                 onClick={() => setCurrentPage((p) => p - 1)}
                 className={`px-4 py-2 border ${currentPage === 1
-                  ? "opacity-50 cursor-not-allowed"
+                  ? "opacity-50 cursor-not-al wed"
                   : "cursor-pointer"
                   }`}
               >
